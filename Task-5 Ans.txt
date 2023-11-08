@@ -1,0 +1,180 @@
+No-1 (a-f):
+
+package com.example.hr;
+
+public class Employee {
+	
+	  private String name;
+	  private int Id;
+	  private double Salary;
+	  
+	  public Employee(String name, int Id, double Salary) {
+		   	this.name = name;
+			this.Id = Id; 
+			this.Salary = Salary;
+		    
+		  }
+		  
+		  public String getname(){
+		    return name;
+		  }
+
+		  	public void setName(String name) {
+		  		this.name = name;
+		  }
+		  public int getId() {
+				return Id;
+			  }
+			  public void setId(int Id) {
+				this.Id=Id;
+			  }
+
+		  public double getSalary() {
+		    return Salary;
+		  }
+
+		  	public void setSalary(double Salary) {
+		  		this.Salary = Salary;
+		  }
+		  
+		 
+		    public void printName() {
+		    	System.out.println("Name: "+ name);
+		    }
+		   	public void printSalary() {
+				System.out.println("Salary: "+ Salary);
+								    
+		  }
+		}
+
+
+package com.example.hrtest;
+
+import com.example.hr.*;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Employee employee1 = new Employee("Mathan", 54321, 40000);
+		Employee employee2 = new Employee("Nathan", 54322, 42000);
+		Employee employee3 = new Employee("Loki", 54323, 43000);
+		
+	    System.out.println("\nEmployee Details:");
+	    employee3.printName();
+	    employee3.printSalary();
+
+	}
+
+}
+
+
+Input = Call employee3
+
+Output = 
+
+	Employee Details:
+	Name: Loki
+	Salary: 43000.0
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+No-2 :
+
+package listtoarray;
+
+import java.util.ArrayList;
+
+public class ListtoArray {
+
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+	      list.add("Apple");
+	      list.add("Orange");
+	      list.add("Banana");
+	      list.add("Guava");
+
+	      System.out.println("List of Fruits: "+list);
+	      	          
+	          list.clear(); 
+	          
+	          // printing ArrayList 
+	          System.out.println("After Removing Elements "); 
+	          System.out.println("Array List: " + list); 
+	    	                        
+	      }
+	}
+
+Output = 
+
+List of Fruits: [Apple, Orange, Banana, Guava]
+After Removing Elements 
+Array List: []
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+No-3 :
+
+package org.treemap.com;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Employee {
+
+	public static void main(String[] args) {
+		TreeMap<Integer,String> map=new TreeMap<Integer,String>();    
+	      map.put(100,"Arun");    
+	      map.put(102,"Ravi");    
+	      map.put(101,"Vijay");    
+	      map.put(103,"Rahul");  
+	      
+	      
+	        
+	      for(Map.Entry m:map.entrySet()){    
+	       System.out.println(m.getKey()+" "+m.getValue());    
+	      }    
+	 }  
+	
+
+	}
+
+
+Output = 
+
+100 Arun
+101 Vijay
+102 Ravi
+103 Rahul
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+No-4 :
+
+package listtoarray;
+
+import java.util.ArrayList;
+
+public class ListtoArray {
+
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+	      list.add("Apple");
+	      list.add("Orange");
+	      list.add("Banana");
+
+	      System.out.println("List of Fruits ::"+list);
+	      String[] myArray = new String[list.size()];
+	      list.toArray(myArray);
+
+	      for(String item:myArray) {
+	          System.out.println(item);
+	      }
+
+}
+	}
+
+Output = 
+
+List of Fruits ::[Apple, Orange, Banana]
+Apple
+Orange
+Banana
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
